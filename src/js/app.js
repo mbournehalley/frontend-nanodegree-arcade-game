@@ -66,6 +66,7 @@
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     };
 
+    // This method moves the character when the arrow keys are pressed.
     Player.prototype.handleInput = function(keyPress) {
         switch(keyPress) {
             case 'left':
@@ -85,15 +86,18 @@
         }
     };
 
+    // This method display the player sprite
     Player.prototype.render = function() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     };
 
+    // This method reset the characters position at the beggining
     Player.prototype.reset = function() {
         this.x = INITIAL_X;
         this.y = INITIAL_Y;
     };
 
+    // This method update the players position prevent the player to cross the boundary
     Player.prototype.update = function() {
         // prevent player from moving beyond canvas  wall boundaries
         if (this.y > 383 ) {
