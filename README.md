@@ -1,8 +1,8 @@
 ## Frontend-nanodegree-arcade-game
-===============================
+
 This game is to practice writing object-orientated javascript on app.js while resources.js and engine.js (modified) were provided by Udacity.
 
-#### Getting Started.
+### Getting Started.
 ===============================
 Clone or download the file in to your desktop. Open the index.html file.
 Use the arrow keys to move the character. Evade the enemy bugs and cross the character to the water
