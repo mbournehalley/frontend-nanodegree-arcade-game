@@ -1,0 +1,32 @@
+{
+  "name": "frontend-nanodegree-arcade-game",
+  "version": "1.0.0",
+  "description": "a frogger arcade game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbournehalley/frontend-nanodegree-arcade-game.git"
+  },
+  "keywords": [
+    "arcade",
+    "classic",
+    "frogger",
+    "game"
+  ],
+  "author": "mbournehalley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbournehalley/frontend-nanodegree-arcade-game/issues"
+  },
+  "homepage": "https://github.com/mbournehalley/frontend-nanodegree-arcade-game#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
