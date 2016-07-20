@@ -70,16 +70,16 @@
     Player.prototype.handleInput = function(keyPress) {
         switch(keyPress) {
             case 'left':
-                player.x = player.x - player.speed;
+                this.x = this.x - this.speed;
                 break;
             case 'up':
-                player.y = player.y - player.speed + 15;
+                this.y = this.y - this.speed + 15;
                 break;
             case 'right':
-                player.x = player.x + player.speed;
+                this.x = this.x + this.speed;
                 break;
             case 'down':
-                player.y = player.y + player.speed - 15;
+                this.y = this.y + this.speed - 15;
                 break;
             default:
                 break;
