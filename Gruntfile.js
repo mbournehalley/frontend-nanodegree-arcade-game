@@ -1,15 +1,14 @@
 module.exports = function(grunt) {
-
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON("package.json"),
 
     concat: {
       options: {
-        separator: ';'
+        separator: ";"
       },
       dist: {
-        src: ['src/js/app.js', 'src/js/resources.js', 'src/js/engine.js'],
-        dest: 'dist/js/<%= pkg.name %>.js'
+        src: ["src/js/app.js", "src/js/resources.js", "src/js/engine.js"],
+        dest: "dist/js/<%= pkg.name %>.js"
       }
     },
 
@@ -18,17 +17,19 @@ module.exports = function(grunt) {
         options: {
           optimizationLevel: 5
         },
-        files: [{
-          expand: true,
-          cwd: 'src/images',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'dist/images'
-        }]
+        files: [
+          {
+            expand: true,
+            cwd: "src/images",
+            src: ["**/*.{png,jpg,gif}"],
+            dest: "dist/images"
+          }
+        ]
       }
     },
 
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js'],
+      files: ["Gruntfile.js", "src/**/*.js"],
       options: {
         // options here to override JSHint defaults
         globals: {
@@ -42,21 +43,21 @@ module.exports = function(grunt) {
 
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        banner:
+          '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
       },
       dist: {
         files: {
-          'dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          "dist/js/<%= pkg.name %>.min.js": ["<%= concat.dist.dest %>"]
         }
       }
     }
-
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks("grunt-contrib-concat");
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-contrib-jshint");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
 
-  grunt.registerTask('default',['concat', 'imagemin', 'jshint', 'uglify']);
+  grunt.registerTask("default", ["concat", "imagemin", "jshint", "uglify"]);
 };
