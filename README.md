@@ -1,14 +1,17 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6f8abd4-d60a-405a-87f3-c9c00bf85501/deploy-status)](https://app.netlify.com/sites/unruffled-thompson-bd1938/deploys)
+
 ## Frontend-nanodegree-arcade-game
 
 This game is to practice writing object-orientated javascript on app.js while resources.js and engine.js (modified) were provided by Udacity.
 
 ### Getting Started.
-* Clone or download the file in to your desktop.
-* Open the index.html file at /dist/index.html or /src/index.html.
-* Use the arrow keys to move the character.
-* Evade the enemy bugs and cross the character to the water
-to go to the next level and the game increases the enemy.
-* Enjoy!
+
+- Clone or download the file in to your desktop.
+- Open the index.html file at /dist/index.html or /src/index.html.
+- Use the arrow keys to move the character.
+- Evade the enemy bugs and cross the character to the water
+  to go to the next level and the game increases the enemy.
+- Enjoy!
 
 ===============================
 
